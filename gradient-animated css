@@ -1,0 +1,27 @@
+.animated-gradient h1 {
+    background-image: linear-gradient(45deg, #FFFFFF, #00CBFA, #004AAD, #0081CE, #FFFFFF);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-animation: animated-gradient 7s ease infinite alternate;
+    animation: animated-gradient2 7s ease infinite alternate;
+    background-size: 300% 300%;
+}
+
+@keyframes animated-gradient {
+ 
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
